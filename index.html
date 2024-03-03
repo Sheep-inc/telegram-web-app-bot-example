@@ -713,9 +713,10 @@
             // DISABLE BACKEND FOR FRONTEND DEMO
             // YOU CAN USE YOUR OWN REQUESTS TO YOUR OWN BACKEND
             // CHANGE THIS CODE TO YOUR OWN
-            window.Telegram.WebApp.sendData(JSON.stringify({
+            let temp= window.Telegram.WebApp.sendData(JSON.stringify({
                 test:"test"
             }));
+            DemoApp.showAlert(temp);
             
             return;
 
